@@ -11,13 +11,13 @@ LFLAGS = -l
 LIBS = m
 
 #define the object files this project needs
-OBJFILES = mm1.o lcgrand.o
+OBJFILES = mm1-10.o lcgrand.o
 
 #define the name of the executable file
 MAIN = program
 
 #define output files
-OUTPUT = mm1.out
+OUTPUT = mm1-10.out
 
 #all of the below is generic  - one only typically adjusts the above
 
