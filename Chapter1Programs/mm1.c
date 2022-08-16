@@ -1,6 +1,7 @@
 /* External definitions for single-server queueing system. */
 
-#include <stdio.h>  
+#include <stdio.h> 
+#include <stdlib.h>
 #include <math.h>
 #include "lcgrand.h"  /* Header file for random-number generator. */
 
@@ -24,7 +25,7 @@ void  update_time_avg_stats(void);
 float expon(float mean);
 
 
-main()  /* Main function. */
+int main()  /* Main function. */
 {
     /* Open input and output files. */
 
@@ -281,6 +282,6 @@ float expon(float mean)  /* Exponential variate generation function. */
 {
     /* Return an exponential random variate with mean "mean". */
 
-    return -mean * log(lcgrand(1));
+    return -mean * logf(lcgrand(1));
 }
 
