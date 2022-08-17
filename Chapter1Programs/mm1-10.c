@@ -159,10 +159,6 @@ void arrive(void)  /* Arrival event function. */
     
     time_next_event[1] = sim_time + expon(mean_interarrival);
 
-    if(time_next_event[1] > time_end)
-    {
-        time_next_event[1] = 1.0e+30;
-    }
 
     /* Check to see whether server is busy. */
 
